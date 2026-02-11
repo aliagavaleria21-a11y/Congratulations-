@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Corazón</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+  overflow: hidden;
+  color: white;
+}
+
+/* Corazón */
+.heart {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  transform: rotate(-45deg);
+  top: 40%;
+  left: 50%;
+  margin-left: -100px;
+  animation: pulse 2s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -100px;
+  left: 0;
+}
+
+.heart::after {
+  left: 100px;
+  top: 0;
+}
+
+/* Destellos */
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+}
+
+.s1 { top: 20%; left: 30%; }
+.s2 { top: 60%; right: 25%; }
+.s3 { bottom: 30%; left: 40%; }
+
+@keyframes pulse {
+  0% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.1); }
+  100% { transform: rotate(-45deg) scale(1); }
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart"></div>
+
+<div class="sparkle s1"></div>
+<div class="sparkle s2"></div>
+<div class="sparkle s3"></div>
+
+<div class="container fade">
+<p>
+And you too divine to just be mine.
+<br>
+You remind me of the color blue.
+</p>
+
+<a href="enamoramiento.html" class="nav">→</a>
+</div>
+
+</body>
+</html>
