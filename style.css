@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  padding: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 h1 {
