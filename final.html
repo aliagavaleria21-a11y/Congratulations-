@@ -9,11 +9,12 @@
 body {
   margin: 0;
   background: radial-gradient(circle at center,
-    #1e3a8a 0%,
-    #1e40af 40%,
-    #0f172a 100%);
+    #ffe4e6 0%,
+    #be123c 45%,
+    #4c0519 100%);
   color: white;
   overflow: hidden;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Destellos */
@@ -21,10 +22,10 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  background: white;
+  background: rgba(255,255,255,0.8);
   border-radius: 50%;
   animation: twinkle 3s infinite alternate;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .s1 { top: 20%; left: 25%; }
@@ -44,11 +45,10 @@ body {
   width: 100%;
   max-width: 400px;
   height: 120px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.15);
   border: none;
   border-radius: 15px;
   color: white;
-  font-family: 'Cormorant Garamond', serif;
   font-size: 1em;
   resize: none;
   outline: none;
@@ -56,7 +56,21 @@ body {
 }
 
 .note::placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.7);
+}
+
+/* Botón música */
+.music-btn {
+  text-decoration: none;
+  background: rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.music-btn:hover {
+  background: rgba(255,255,255,0.4);
 }
 </style>
 </head>
@@ -71,21 +85,23 @@ body {
 <div class="container fade">
 
 <h1>
-And darling, I will be loving you
+Llegaste al final.
 </h1>
 
 <p>
-Hasta los 70.
+Espero que te guste y hayas disfrutado de verlo como yo de hacerlo❤️
 <br><br>
-Y más allá del tiempo.
+Te amo de aquí hasta las estrellas.
 </p>
 
-<textarea class="note" placeholder="Escribe aquí lo que sientes..."></textarea>
+<textarea class="note" placeholder="Mi vida, antes de finalizar quisiera desearte un feliz aniversario y cumple mes. Como este, espero que sean muchos más. Realmente ni sabes cuánto te amo.
+Sé que este detalle no es uno físico ni mucho menos, pero quiero que sepas que lo hice con mucho amor y dedicación, pero sobre todo pensando en ti. Sin mucho más que agregar, espero que te haya gustado."></textarea>
 
 <br>
 
-<a href="https://open.spotify.com/track/34gCuhDGsG4bRPIf9bb02f?si=MKoE2_UKSlu6ewPip8smHw"
+<a href="https://open.spotify.com/track/34gCuhDGsG4bRPIf9bb02f"
    target="_blank"
+   rel="noopener noreferrer"
    class="music-btn">
 🎧 Escuchar Thinking Out Loud
 </a>
