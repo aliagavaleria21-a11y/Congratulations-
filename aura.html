@@ -28,8 +28,9 @@ body::after {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: auraMove 6s infinite alternate ease-in-out;
+  pointer-events: none;   /* 👈 ESTO ES LA CLAVE */
+  z-index: 0;
 }
-
 @keyframes auraMove {
   0% { transform: translate(-50%, -50%) scale(1); }
   100% { transform: translate(-50%, -50%) scale(1.1); }
