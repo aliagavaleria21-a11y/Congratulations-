@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Altura</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #e0f2fe, #ffffff);
+  overflow: hidden;
+  color: #1e3a5f;
+}
+
+/* Línea de ascenso */
+.line {
+  position: absolute;
+  width: 2px;
+  height: 60%;
+  background: rgba(30,58,95,0.2);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* Punto flotante (amor elevado) */
+.dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #f472b6;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 60%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px rgba(244,114,182,0.6);
+  animation: float 3s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translate(-50%, 0); }
+  100% { transform: translate(-50%, -20px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="line"></div>
+<div class="dot"></div>
+
+<div class="container fade">
+<p>
+felt the highs and they felt like you.
+<br><br>
+See, a love like mine is too good to be true.
+</p>
+
+<a href="corazon.html" class="nav">→</a>
+</div>
+
+</body>
+</html>
