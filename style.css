@@ -2,18 +2,20 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
   font-family: 'Cormorant Garamond', serif;
   text-align: center;
   color: #2c3e50;
+  position: relative;
 }
 
+/* centrado real */
 .container {
   position: relative;
   z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 30vh;
 }
 
 h1 {
@@ -28,27 +30,12 @@ p {
   margin-bottom: 40px;
 }
 
-.music-btn {
-  display: inline-block;
-  font-size: 0.9em;
-  text-decoration: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.6);
-  color: #2c3e50;
-  margin-bottom: 50px;
-  transition: 0.3s ease;
-}
-
-.music-btn:hover {
-  background: rgba(255,255,255,0.9);
-}
-
 .nav {
   font-size: 1.8em;
   text-decoration: none;
-  color: #2c3e50;
+  color: inherit;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .nav:hover {
